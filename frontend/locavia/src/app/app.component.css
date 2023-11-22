@@ -1,0 +1,16 @@
+header {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(60deg, #ffaa00 30%, #ffd600 70%);
+    display: flex;
+    flex-direction: row;
+}
+ 
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}

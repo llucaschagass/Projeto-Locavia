@@ -1,0 +1,24 @@
+/* header.component.css */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+  img {
+    max-width: 40%; 
+    height: auto;
+    top: -100px;
+  }
+
+  .logo-container p {
+    font-size: 30px; /* Tamanho da fonte*/
+    font: 300 24px Roboto,Helvetica Neue,sans-serif!important;
+    color: white;   /* Cor da fonte branca */
+    width: 322px;
+    text-align: end;
+    position: absolute;
+    padding-top: 110px;
+  }
+  

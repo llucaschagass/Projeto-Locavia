@@ -1,0 +1,15 @@
+/* veiculo-list.component.css */
+
+
+/* Estilos para o botão de Listagem */
+.button-listagem {
+  width: 250px; 
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  }
+  
+  

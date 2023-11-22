@@ -1,0 +1,44 @@
+<!-- veiculo-create.component.html -->
+<button class="button-criar" onclick="coletarInformacoes()">Adicionar Informação</button>
+
+<script>
+  async function coletarInformacoes() {
+    const id = parseInt(prompt('Informe o ID:'));
+    const placa = prompt('Informe a placa:');
+    const chassi = prompt('Informe o chassi:');
+    const renavam = prompt('Informe o renavam:');
+    const modelo = prompt('Informe o modelo:');
+    const marca = prompt('Informe a marca:');
+    const ano = parseInt(prompt('Informe o ano:'));
+
+    const novoVeiculo = {
+      id,
+      placa,
+      chassi,
+      renavam,
+      modelo,
+      marca,
+      ano,
+    };
+
+    console.log('Veículo a ser adicionado:', novoVeiculo);
+
+    try {
+      const response = await fetch('http://localhost:3000/api/veiculos', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(novoVeiculo),
+      });
+
+      if (response.ok) {
+        console.log('Veículo adicionado com sucesso!');
+      } else {
+        console.error('Erro ao adicionar veículo:', response.statusText);
+      }
+    } catch (error) {
+      console.error('Erro ao enviar dados ao servidor:', error);
+    }
+  }
+</script>
