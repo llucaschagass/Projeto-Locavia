@@ -55,3 +55,7 @@ Acesse `http://localhost:4200/` no seu navegador para interagir com o frontend.
 
 **Observação:** Certifique-se de que o servidor backend esteja em execução antes de iniciar o frontend para garantir a comunicação adequada entre os dois.
 
+## Notas do desenvolvimento
+
+Estou encontrando dificuldade em implementar o código pois assim que eu modifico o Typescript dos módulos eles param de funcionar em app-module.ts e em app.components.ts
+
